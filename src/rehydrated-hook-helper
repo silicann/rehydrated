@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -eu
+
+DOMAIN_HOOKS="^(deploy_challenge|clean_challenge|deploy_cert|deploy_ocsp|unchanged_cert|invalid_challenge|generate_csr)$"
+
+if echo "$1" | grep -qwE "$DOMAIN_HOOKS"; then
+    env_file="/etc/rehydrated/domains.conf.d/$2"
+    if [ -e "$env_file" ]; then
+        # shellcheck disable=SC1090
+        . "$env_file"
+    fi
+fi
+
+exec "$(dirname "$0")/rehydrated-hook.py" "$@"
