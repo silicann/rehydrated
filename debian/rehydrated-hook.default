@@ -1,0 +1,8 @@
+# every file created by rehydrated should be located in this directory
+# call dpkg-reconfigure rehydrated-hook if you change this directory
+export REHYDRATED_HOME=/var/lib/rehydrated
+# export data to `export` directory
+export REHYDRATED_EXPORT_DIR=export
+# this prevents that domains are exported by default
+# it might be acceptable to enable this in case you set a default client key
+export REHYDRATED_SHOULD_EXPORT=0

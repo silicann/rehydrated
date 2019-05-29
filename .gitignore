@@ -1,0 +1,11 @@
+build
+dist
+__pycache__
+
+debian/debhelper-*-stamp
+debian/files
+debian/tmp/
+debian/*.debhelper.log
+debian/*.debhelper
+debian/*.substvars
+debian/rehydrated-hook/

@@ -1,0 +1,7 @@
+Put client configuration here:
+
+```bash
+# /etc/rehydrated/clients.conf.d/my-client
+export REHYDRATED_CLIENTS="${REHYDRATED_CLIENTS:-21DE48E31212DBB5,79BE3E4300411886}"
+export REHYDRATED_SHOULD_EXPORT=1
+```

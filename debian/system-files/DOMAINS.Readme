@@ -1,0 +1,3 @@
+Symlink files from ../clients here:
+
+ln -s ../clients.conf.d/my-client www.example.com

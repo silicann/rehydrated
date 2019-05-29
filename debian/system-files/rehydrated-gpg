@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -eu
+
+# shellcheck disable=SC1091
+. /etc/default/rehydrated-hook
+
+exec gpg2 --homedir "$REHYDRATED_HOME/gpg" "$@"

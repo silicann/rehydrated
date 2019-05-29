@@ -1,0 +1,3 @@
+debian/system-files/rehydrated-gpg /usr/bin/
+debian/system-files/CLIENTS.Readme /etc/rehydrated/clients.conf.d/
+debian/system-files/DOMAINS.Readme /etc/rehydrated/domains.conf.d/
