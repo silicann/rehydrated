@@ -1,7 +1,7 @@
 include:
   - project: 'urwerk/gitlab-recipes'
     ref: main
-    file: '/templates/python-lib.gitlab-ci.yml'
+    file: '/templates/deb.gitlab-ci.yml'
 
 variables:
-  CI_SKIP_PYTHON_TESTS: 1
+  DEBBUILD_DEFAULT: docker.gitlab.silicann.systems:443/urwerk/docker-recipes/debbuild-python:buster
