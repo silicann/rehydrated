@@ -91,10 +91,12 @@ def deploy(home, dest_file, key_file, chain_file, perms=None, encrypt=None):
             result_file.add(os.path.realpath(chain_file), 'cert.pem')
             result_file_name = result_file.name
 
-        if encrypt:
-            result_file_name = encrypt(result_file_name)
+    if encrypt:
+        result_file_name = encrypt(result_file_name)
+
     if perms:
         os.chmod(result_file_name, perms)
+
     shutil.move(result_file_name, dest_file)
 
 
