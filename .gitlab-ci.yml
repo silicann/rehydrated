@@ -1,0 +1,7 @@
+include:
+  - project: 'urwerk/gitlab-recipes'
+    ref: main
+    file: '/templates/python-lib.gitlab-ci.yml'
+
+variables:
+  CI_SKIP_PYTHON_TESTS: 1
