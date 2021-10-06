@@ -11,7 +11,7 @@ import tempfile
 
 import gpg
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 logger = logging.getLogger('rehydrated')
 
